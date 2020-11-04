@@ -1,0 +1,153 @@
+.safety-section {
+  padding-top: 62px;
+  padding-bottom: 72px;
+}
+
+.safety-section__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 17px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #212B31;
+}
+
+.safety-section__title::after {
+  content: "";
+  position: absolute;
+  min-width: 42px;
+  min-height: 40px;
+  background-image: url("../img/barg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: -15px;
+  right: 420px;
+}
+
+.safety-section__text {
+  max-width: 857px;
+  margin-top: 0;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #72787D;
+}
+
+.safety-section__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 62px;
+}
+
+.safety-section__item {
+  width: 332px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.safety-section__item--pollution::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/pollution.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.safety-section__item--waste::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/waste.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.safety-section__item--society::before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/society.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.safety-item__title {
+  margin-top: 19px;
+  margin-bottom: 11px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #212B31;
+}
+
+.safety-item__text {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #72787D;
+}
+
+.safety-section__design-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  background-color: #F6F8F9;
+  border-radius: 5px;
+}
+
+.safety-section__design-item--text {
+  margin: 0;
+  margin-left: 44px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #212B31;
+}
+
+.safety-section__design-item--link {
+  margin-left: auto;
+}

@@ -1,0 +1,30 @@
+.intro-section {
+  padding-top: 74px;
+  padding-bottom: 500px;
+  background-image: url("../img/intr-section-bg.png");
+  background-repeat: no-repeat;
+  background-size: 1040px 422px;
+  background-position: center bottom;
+}
+
+.intro-section__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 818px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #212B31;
+}
+
+.intro-section__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>42-dars. Sass</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header__container">
+      <a class="site-header__logo" href="#">
+        <img class="site-header__logo" src="img/logo.svg" alt="logo imaage" width="199" height="44">
+      </a>
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Главная</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">О нас</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Продукция</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Процесс</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Надёжность</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Клиенты</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Связаться с нами</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="site-header__button" href="#">Заказать демо</a>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <section class="intro-section">
+      <div class="container">
+        <h1 class="intro-section__title">Умная доставка материалов для сложных строительных площадок</h1>
+
+        <div class="intro-section__buttons">
+          <a class="intro-section__button left-button" href="#">Заказать демо</a>
+          <a class="intro-section__button right-button" href="#">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-main__delivery-section delivery-section">
+      <div class="container">
+        <h2 class="delivery-section__title">Доставка стала проще</h2>
+        <p class="delivery-section__text">Мы позаботимся обо всех ваших различных поставках и их многочисленных специализированных требованиях к разгрузке.</p>
+
+        <ul class="delivery-section__list">
+          <li class="delivery-section__item delivery-item delivery-section__item--beton">
+            <div class="delivery-item__inner">
+              <h3 class="delivery-item__title">Бетон</h3>
+              <p class="delivery-item__text">Поставки бетона точно планируются, а его состояние контролируется, что обеспечивает максимально возможное время для установки.</p>
+            </div>
+          </li>
+
+          <li class="delivery-section__item delivery-item delivery-section__item--waste">
+            <div class="delivery-item__inner">
+              <h3 class="delivery-item__title">Утилизация отходов</h3>
+              <p class="delivery-item__text">Отходы контролируются и сортируются, а заполненность контейнеров отслеживается в цифровом виде.</p>
+            </div>
+          </li>
+
+          <li class="delivery-section__item delivery-item delivery-section__item--formwork">
+            <div class="delivery-item__inner">
+              <h3 class="delivery-item__title">Опалубка</h3>
+              <p class="delivery-item__text">Вся опалубка отслеживается от прибытия до отправления, а ее состояние контролируется, что сводит к минимуму потери и повреждения.</p>
+            </div>
+          </li>
+
+          <li class="delivery-section__item delivery-item delivery-section__item--panel">
+            <div class="delivery-item__inner">
+              <h3 class="delivery-item__title">Сборные панели</h3>
+              <p class="delivery-item__text">Сборные панели прибывают по очереди, их хранение на месте отслеживается, а их установка планируется и контролируется.</p>
+            </div>
+          </li>
+
+          <li class="delivery-section__item delivery-item delivery-section__item--fasad">
+            <div class="delivery-item__inner">
+              <h3 class="delivery-item__title">Фасады</h3>
+              <p class="delivery-item__text">Элементы фасада поступают последовательно, их сборка контролируется, а перемещение отслеживается.</p>
+            </div>
+          </li>
+
+          <li class="delivery-section__item delivery-item delivery-section__item--otdelka">
+            <div class="delivery-item__inner">
+              <h3 class="delivery-item__title">Отделка</h3>
+              <p class="delivery-item__text">Материалы поступают точно в срок, маркируются и детально отслеживаются для установки.</p>
+            </div>
+          </li>
+
+          <li class="delivery-section__item delivery-item delivery-section__item--lesa">
+            <div class="delivery-item__inner">
+              <h3 class="delivery-item__title">Строительные леса</h3>
+              <p class="delivery-item__text">Строительные леса отслеживаются от получения до хранения, использования и возврата, поэтому всегда ясно, что на месте и где.</p>
+            </div>
+          </li>
+
+          <li class="delivery-section__item delivery-item delivery-section__item--equips">
+            <div class="delivery-item__inner">
+              <h3 class="delivery-item__title">Оборудование</h3>
+              <p class="delivery-item__text">Оборудование и операторы гарантированно доступны в случае необходимости, а их рабочее состояние отслеживается.</p>
+            </div>
+          </li>
+
+          <li class="delivery-section__item delivery-item delivery-section__item--texnika">
+            <div class="delivery-item__inner">
+              <h3 class="delivery-item__title">Электрика и сантехника</h3>
+              <p class="delivery-item__text">Доставка осуществляется в точной последовательности для сложной установки, что сокращает или устраняет необходимость в хранении.</p>
+            </div>
+          </li>
+        </ul>
+        <p class="intro-section__bottom-text">
+          <span class="bottom-text__span">. . .и все остальные материалы,</span>которые поступают или покидают вашу площадку</p>
+      </div>
+    </section>
+
+    <section class="safety-section">
+      <div class="container">
+        <h2 class="safety-section__title">Надёжность</h2>
+        <p class="safety-section__text">Благодаря надёжному строительству выигрывают все - муниципальные органы выполняют свои обязанности перед гражданами, инвесторы получают сертификаты своих проектов, а генеральные подрядчики получают повышенную репутацию.</p>
+
+        <ul class="safety-section__list">
+          <li class="safety-section__item safety-item safety-section__item--pollution">
+            <h3 class="safety-item__title">Сниженное загрязнение</h3>
+            <p class="safety-item__text">При оптимизации логистики требуется меньше поездок, что приводит к снижению выбросов CO2. Выбрасываемый CO2 контролируется, что позволяет ставить цели и вносить ощутимые улучшения.</p>
+          </li>
+
+          <li class="safety-section__item safety-item safety-section__item--waste">
+            <h3 class="safety-item__title">Улучшенное управление отходами</h3>
+            <p class="safety-item__text">Упрощается сортировка отходов, автоматизируется утилизация отходов, а поврежденные материалы при необходимости используются повторно, что снижает затраты и стимулирует переработку и повторное использование.</p>
+          </li>
+
+          <li class="safety-section__item safety-item safety-section__item--society">
+            <h3 class="safety-item__title">Улучшенное влияние на общество</h3>
+            <p class="safety-item__text">Уменьшаются проблемы с дорожным движением и шумовое загрязнение, что улучшает жизнь местного сообщества. Улучшенное обращение с материалами и хранение означает, что рабочие также лучше защищены.
+            </p>
+          </li>
+        </ul>
+
+        <ul class="safety-section__design-list">
+          <li class="safety-section__design-item design-item">
+            <img class="design-item__img" src="img/Frame.png" alt="logo" width="40" height="40">
+          </li>
+
+          <li class="safety-section__design-item design-item safety-section__design-item--text">
+            <p class="design-item__text">Надёжная конструкция СтройКонтроль входит в стандартную комплектацию.</p>
+          </li>
+
+          <li class="safety-section__design-item design-item safety-section__design-item--link">
+            <a class="design-item__button" href="#">Подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

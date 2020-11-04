@@ -1,0 +1,202 @@
+.delivery-section {
+  padding-top: 143px;
+  padding-bottom: 62px;
+}
+
+.delivery-section__title {
+  margin-top: 0;
+  margin-bottom: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #212B31;
+}
+
+.delivery-section__text {
+  max-width: 643px;
+  margin-top: 0;
+  margin-bottom: 43px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #72787D;
+}
+
+.delivery-section__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.delivery-section__item {
+  width: 334px;
+  display: flex;
+  margin-bottom: 33px;
+
+
+  &:nth-child(1n) {
+    margin-right: 27px;
+  }
+}
+
+.delivery-section__item--beton::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/beton.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin-right: 10px;
+}
+
+.delivery-section__item--waste::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/waste1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin-right: 10px;
+}
+
+.delivery-section__item--formwork::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/formwork.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin-right: 10px;
+}
+
+.delivery-section__item--panel::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/panel.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin-right: 10px;
+}
+
+.delivery-section__item--fasad::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/fasad.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin-right: 10px;
+}
+
+.delivery-section__item--otdelka::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/atdelka.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin-right: 10px;
+}
+
+.delivery-section__item--lesa::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/lesa.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin-right: 10px;
+}
+
+.delivery-section__item--equips::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/equips.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin-right: 10px;
+}
+
+.delivery-section__item--texnika::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/texnika.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  margin-right: 10px;
+}
+
+.delivery-item__title {
+  margin: 0;
+  margin-bottom: 11px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212B31;
+}
+
+.delivery-item__text {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #72787D;
+}
+
+.intro-section__bottom-text {
+  position: relative;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #72787D;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  z-index: 50;
+}
+
+.bottom-text__span {
+  color: #000000;
+}
+
+.intro-section__bottom-text::after {
+  content: "";
+  position: absolute;
+  background-color: #FFD042;
+  width: 284px;
+  height: 16px;
+  left: 170px;
+  top: 17px;
+  z-index: -1;
+}
