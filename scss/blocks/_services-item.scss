@@ -1,0 +1,58 @@
+.services-item__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.services-item__text {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.make-section__services-item--subcontractor::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/sub.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.make-section__services-item--key::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/Key.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.make-section__services-item--percent::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/percent.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  display: block;
+  margin-bottom: 20px;
+}

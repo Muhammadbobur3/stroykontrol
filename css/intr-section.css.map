@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,cAAc,CAAC;EACb,WAAW,EAAE,IAAI;CAClB",
-    "sources": [
-        "../intr-section.scss"
-    ],
-    "names": [],
-    "file": "intr-section.css"
-}

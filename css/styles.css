@@ -927,4 +927,206 @@ img {
 .safety-section__design-item--link {
   margin-left: auto;
 }
+
+.make-section {
+  background-color: #212B31;
+  padding-top: 143px;
+  padding-bottom: 118px;
+  background-image: url("../img/Rectangle.png");
+  background-repeat: no-repeat;
+  background-size: 618px 493px;
+  background-position: calc(50% + 390px) 150px;
+}
+
+.make-section__title {
+  margin: 0;
+  margin-bottom: 50px;
+  margin-right: auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.make-section__list {
+  max-width: 570px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: auto;
+  margin-left: 32px;
+}
+
+.make-section__item::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  left: -32px;
+  top: 10px;
+}
+
+.make-section__item {
+  max-width: 589px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.make-section__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  margin-right: auto;
+}
+
+.make-section__left-link {
+  text-decoration: none;
+  padding: 0;
+  margin-left: 22px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: #FFFFFF;
+  padding: 9px 20px;
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+  color: #000000;
+}
+
+.make-section__right-link {
+  text-decoration: none;
+  padding: 0;
+  margin-left: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  padding: 9px 20px;
+  border-radius: 3px;
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  color: #72787D;
+}
+
+.make-section__services-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 127px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.make-section__services-item {
+  max-width: 340px;
+}
+
+.make-item__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.make-item__text {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.services-item__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.services-item__text {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.make-section__services-item--subcontractor::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/sub.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.make-section__services-item--key::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/Key.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.make-section__services-item--percent::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/percent.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+  display: block;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=styles.css.map */
