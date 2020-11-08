@@ -1,0 +1,131 @@
+.work {
+  padding-top: 143px;
+  padding-bottom: 96px;
+}
+
+.work__container {
+  display: flex;
+}
+
+.work__left-wrapper {
+  margin-right: auto;
+  max-width: 462px;
+}
+
+.work__left-wrapper::after {
+  content: "";
+  min-width: 336px;
+  min-height: 392px;
+  background-image: url("../img/work.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  display: block;
+}
+
+.work__title {
+  margin: 0;
+  margin-bottom: 21px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  color: #212B31;
+}
+
+.work__text {
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #72787D;
+}
+
+.work__right-wrapper {
+  max-width: 520px;
+  margin-left: auto;
+}
+
+.work__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.work__item {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.work__span {
+  border: 1px solid #DADEDF;
+  height: 40px;
+  align-items: center;
+  padding: 10px 17px;
+}
+
+.work__inner {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+}
+
+.work__item-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #212B31;
+}
+
+.work__item-text {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #72787D;
+}
+
+.work__links {
+  display: flex;
+}
+
+.work__link {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.work__link-black {
+  min-width: 166px;
+  min-height: 50px;
+  padding: 13px 25px;
+  background-color: black;
+  border-radius: 4px;
+}
+
+.work__link-white {
+  min-width: 149px;
+  min-height: 50px;
+  padding: 13px 25px;
+  background-color: transparent;
+  border: 1px solid #DADEDF;
+  border-radius: 4px;
+  margin-left: 16px;
+  color: #72787D;
+}

@@ -1,0 +1,78 @@
+.about {
+  padding-top: 40px;
+  padding-bottom: 72px;
+}
+
+.about__heading {
+  font-family: "Inter";
+  margin-top: 0;
+  margin-bottom: 21px;
+  text-align: center;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 500;
+  color: $heading-color;
+}
+
+.about__text {
+  font-family: "Inter";
+  max-width: 830px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 28px;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #72787D;
+}
+
+.about__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+// .about__list-item:not(:last-child) {
+//   margin-bottom: 64px;
+// }
+
+.about__list-item {
+  margin-bottom: 64px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .about__heading {
+    font-family: "Inter";
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .about__text {
+    font-family: "Inter";
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about__text {
+    margin-bottom: 40px;
+  }
+
+  .about__list-item {
+
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  &::after {
+    height: 272px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    content: "";
+    transition: width 0.3s ease;
+  }
+
+  &--tracking::after {
+    width: 402px;
+    background-image: url("../img/tracking.png");
+  }
+
+  &--optimization::after {
+    width: 358px;
+    background-image: url("../img/optimization.png");
+  }
+
+  &--realtime::after {
+    width: 416px;
+    background-image: url("../img/real-time.png");
+  }
+}
+
+.about-info__inner {
+  width: 100%;
+  max-width: 560px;
+}
+
+.about-info__heading {
+  font-family: "Inter";
+  margin-top: 0;
+  margin-bottom: 19px;
+  color: $heading-color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.about-info__description {
+  margin: 0;
+  margin-top: 19px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #72787D;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+
+  .about-info {
+    &--tracking::after {
+      background-image: url("../img/tracking-bg@2x.png");
+    }
+
+    &--optimization::after {
+      background-image: url("../img/optimization-bg@2x.png");
+    }
+
+    &--realtime::after {
+      background-image: url("../img/realtime-bg@2x.png");
+    }
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .about-info {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .about-info__inner {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 1070px) {
+  .about-info {
+    padding-left: 0;
+    padding-right: 0;
+
+    &::after {
+      width: 40%;
+    }
+  }
+
+  .about-info__inner {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-info {
+    flex-direction: column-reverse;
+
+    &::after {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 30px;
+      background-position: center bottom;
+    }
+  }
+
+  .about-info__inner {
+    max-width: 100%;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-info__inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

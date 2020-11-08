@@ -1,0 +1,43 @@
+.chaos {
+  padding-bottom: 145px;
+}
+
+.chaos__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.chaos__container::after {
+  content: "";
+  min-width: 1040px;
+  min-height: 304px;
+  background-image: url("../img/chaos-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+.chaos__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #212B31;
+}
+
+.chaos__text {
+  max-width: 1015px;
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #72787D;
+}

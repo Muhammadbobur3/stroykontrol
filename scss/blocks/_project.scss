@@ -1,0 +1,110 @@
+.project {
+  padding-bottom: 100px;
+}
+
+.project__title {
+  max-width: 781px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 165px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #212B31;
+}
+
+.project__list {
+  position: relative;
+  max-width: 542px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 71px;
+}
+
+.project__list::after {
+  position: absolute;
+  content: "";
+  min-width: 464px;
+  min-height: 400px;
+  background-image: url("../img/project-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  left: 110%;
+  top: 0%;
+}
+
+.project__list-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  color: #212B31;
+}
+
+.project__list-text {
+  margin: 0;
+  margin-bottom: 28px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #72787D;
+}
+
+.project__list-help {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  color: #212B31;
+}
+
+.project__list-help::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  z-index: -1;
+  width: 250px;
+  height: 16px;
+  background-color: #FFD042;
+}
+
+.project__img-list {
+  margin-top: 250px;
+  padding: 0;
+  min-width: 1088px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.project__img {
+  margin-bottom: 17px;
+}
+
+.project__img:not(:first-child) {
+  margin-left: 39px;
+}
+
+.project__skanska {
+  margin-left: auto;
+  margin-right: auto;
+}

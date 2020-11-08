@@ -33,3 +33,21 @@
     text-decoration: underline;
   }
 }
+
+@media only screen and (max-width: 1200px) {
+  .nav-list__item--process {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .nav-list__item--reliability {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .nav-list__item--contact {
+    display: none;
+  }
+}

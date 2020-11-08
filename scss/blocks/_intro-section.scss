@@ -1,10 +1,10 @@
 .intro-section {
   padding-top: 74px;
-  padding-bottom: 500px;
+  padding-bottom: 142px;
   background-image: url("../img/intr-section-bg.png");
   background-repeat: no-repeat;
   background-size: 1040px 422px;
-  background-position: center bottom;
+  background-position: center 400px;
 }
 
 .intro-section__title {
@@ -27,4 +27,55 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.intro-section__list {
+  margin-top: 685px;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.intro-section__item {
+  max-width: 325px;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-section__item--effekt::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/effekt.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  margin-bottom: 10px;
+}
+
+.intro-section__item--reject::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/cnijenie.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  margin-bottom: 10px;
+}
+
+.intro-section__item--security::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/security.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  margin-bottom: 10px;
 }
