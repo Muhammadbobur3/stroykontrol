@@ -64,19 +64,6 @@
   only screen and (                min-resolution: 192dpi),
   only screen and (                min-resolution: 2dppx) {
 
-  .about-info {
-    &--tracking::after {
-      background-image: url("../img/tracking-bg@2x.png");
-    }
-
-    &--optimization::after {
-      background-image: url("../img/optimization-bg@2x.png");
-    }
-
-    &--realtime::after {
-      background-image: url("../img/realtime-bg@2x.png");
-    }
-  }
 }
 
 @media only screen and (max-width: 1140px) {

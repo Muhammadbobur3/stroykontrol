@@ -979,18 +979,6 @@ img {
   color: #72787D;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .about-info--tracking::after {
-    background-image: url("../img/tracking-bg@2x.png");
-  }
-  .about-info--optimization::after {
-    background-image: url("../img/optimization-bg@2x.png");
-  }
-  .about-info--realtime::after {
-    background-image: url("../img/realtime-bg@2x.png");
-  }
-}
-
 @media only screen and (max-width: 1140px) {
   .about-info {
     padding-left: 30px;
@@ -1765,6 +1753,202 @@ img {
   border: 1px solid #DADEDF;
   border-radius: 4px;
   margin-left: 16px;
+  color: #72787D;
+}
+
+.choose {
+  padding-bottom: 127px;
+}
+
+.choose__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 17px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #212B31;
+}
+
+.choose__text {
+  font-family: "Inter";
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  color: #212B31;
+}
+
+.choose__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 55px;
+}
+
+.choose__right-wrapper {
+  max-width: 458px;
+  margin-right: auto;
+}
+
+.choose__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.choose__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.choose__item--nagrada::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/nagrada.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+}
+
+.choose__item--check::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/check.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+}
+
+.choose__item--lider::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/lider.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+}
+
+.choose__item--hands::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  background-image: url("../img/hands.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+}
+
+.choose__inner {
+  margin-left: 16px;
+}
+
+.choose__img {
+  display: block;
+}
+
+.choose__inner-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212B31;
+}
+
+.choose__inner-text {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #72787D;
+}
+
+.choose__left-wrapper {
+  width: 614px;
+  height: 516px;
+  margin-left: auto;
+  background-color: #F6F8F9;
+  padding: 45px 92px 56px 41px;
+}
+
+.choose__left-text {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 48px;
+  color: #212B31;
+}
+
+.choose__author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 28px;
+}
+
+.choose__avatar {
+  display: block;
+  margin-right: 8px;
+}
+
+.choose__author-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.choose__name {
+  margin: 0;
+  margin-bottom: 1px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #212B31;
+}
+
+.choose__profession {
+  margin: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
   color: #72787D;
 }
 /*# sourceMappingURL=styles.css.map */
