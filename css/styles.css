@@ -388,25 +388,11 @@ img {
 }
 
 .container {
-  max-width: 1150px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.header__container {
   max-width: 1430px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: auto;
-  margin-left: auto;
   padding-left: 25px;
   padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
@@ -462,28 +448,119 @@ img {
   padding: 26px;
 }
 
+.site-header__container {
+  max-width: 1430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
 .site-header__logo {
   display: block;
 }
 
-.site-header__button {
-  text-decoration: none;
-  padding: 0;
-  margin-left: 22px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-  background-color: black;
-  padding: 9px 20px;
-  border-radius: 3px;
-  white-space: nowrap;
+.site-header__logo:active {
+  opacity: 0.6;
+}
+
+.site-header__menu-btn {
+  background: transparent;
+  border: none;
+  display: none;
+}
+
+@media only screen and (max-width: 830px) {
+  .site-header__menu-btn {
+    display: block;
+    margin-left: auto;
+  }
 }
 
 .sitenav {
   margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sitenav--open {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background-color: rgba(1, 77, 86, 0.103);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.sitenav--open + .site-header__menu-btn {
+  position: relative;
+  display: block;
+  z-index: 51;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 2px;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/iks.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 17px;
+  cursor: pointer;
+}
+
+.sitenav--open .sitenav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2C6269;
+  max-width: 100%;
+  height: 100vh;
+  padding: 112px 0px 0 48px;
+}
+
+.sitenav--open .nav-list__item {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.sitenav--open .nav-list__item:not(:first-child) {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.sitenav--open .sitenav__btn {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .sitenav__list {
@@ -513,11 +590,44 @@ img {
   line-height: 19px;
   color: #72787D;
   white-space: nowrap;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.nav-list__link:hover, .nav-list__link:active {
+.nav-list__link:hover {
   color: #FFD042;
-  text-decoration: underline;
+}
+
+.nav-list__link:active {
+  opacity: 0.6;
+}
+
+.sitenav__btn {
+  text-decoration: none;
+  padding: 0;
+  margin-left: 22px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: black;
+  padding: 7px 18px;
+  border-radius: 3px;
+  white-space: nowrap;
+  border: 2px solid black;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sitenav__btn:hover {
+  background-color: transparent;
+  color: black;
+}
+
+.sitenav__btn:active {
+  opacity: 0.6;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -535,6 +645,18 @@ img {
 @media only screen and (max-width: 990px) {
   .nav-list__item--contact {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .sitenav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .sitenav--open {
+    display: block;
   }
 }
 

@@ -2,27 +2,37 @@
   padding: 26px;
 }
 
-.site-header__logo {
-  display: block;
-
+.site-header__container {
+  max-width: 1430px;
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
-.site-header__button {
-  text-decoration: none;
-  padding: 0;
-  margin-left: 22px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-  background-color: black;
-  padding: 9px 20px;
-  border-radius: 3px;
-  white-space: nowrap;
+.site-header__logo {
+  display: block;
+}
+
+.site-header__logo:active {
+  opacity: 0.6;
+}
+
+.site-header__menu-btn {
+  background: transparent;
+  border: none;
+  display: none;
 }
 
 @media only screen and (max-width: 1200px) {
 
+}
+
+@media only screen and (max-width: 830px) {
+  .site-header__menu-btn {
+    display: block;
+    margin-left: auto;
+  }
 }

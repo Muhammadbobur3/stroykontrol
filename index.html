@@ -10,7 +10,7 @@
 <body>
 
   <header class="site-header">
-    <div class="header__container">
+    <div class="container site-header__container">
       <a class="site-header__logo" href="#">
         <img class="site-header__logo" src="img/logo.svg" alt="logo imaage" width="199" height="44">
       </a>
@@ -38,12 +38,15 @@
             <a class="nav-list__link" href="#">Связаться с нами</a>
           </li>
         </ul>
+        <a class="sitenav__btn" href="#">Заказать демо</a>
       </nav>
-      <a class="site-header__button" href="#">Заказать демо</a>
+      <button class="site-header__menu-btn">
+        <img class="site-header__menu-img" src="img/menu.svg" alt="menu" width="20" height="20">
+      </button>
     </div>
   </header>
 
-  <main class="site-main">
+  <main class="site-main" style="display: none;">
 
 
     <!-- INTRO-SECTION -->
@@ -444,5 +447,7 @@
       </section>
 
     </main>
+
+    <script src="script.js"></script>
   </body>
   </html>
