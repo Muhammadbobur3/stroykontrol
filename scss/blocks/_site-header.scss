@@ -26,11 +26,15 @@
   display: none;
 }
 
-@media only screen and (max-width: 1200px) {
-
-}
-
 @media only screen and (max-width: 830px) {
+  .site-header {
+    padding: 20px;
+  }
+
+  .site-header__container {
+    padding: 0;
+  }
+
   .site-header__menu-btn {
     display: block;
     margin-left: auto;

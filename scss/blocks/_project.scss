@@ -28,17 +28,9 @@
   margin-top: 71px;
 }
 
-.project__list::after {
-  position: absolute;
-  content: "";
-  min-width: 464px;
-  min-height: 400px;
-  background-image: url("../img/project-bg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: right center;
-  left: 110%;
-  top: 0%;
+.project__inner {
+  display: flex;
+  align-items: center;
 }
 
 .project__list-title {
@@ -76,6 +68,10 @@
   color: #212B31;
 }
 
+.projec__bg {
+  margin-left: auto;
+}
+
 .project__list-help::after {
   content: "";
   position: absolute;
@@ -89,22 +85,90 @@
 .project__img-list {
   margin-top: 250px;
   padding: 0;
-  min-width: 1088px;
+  justify-content: space-between;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
-.project__img {
-  margin-bottom: 17px;
+// .project__img:not(:first-child) {
+//   margin-left: 39px;
+// }
+
+// .project__skanska {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+@media only screen and (max-width: 1115px) {
+  .project__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project__title {
+    margin-bottom: 0;
+  }
+
+  .projec__bg {
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  .project__list-text {
+    text-align: center;
+  }
+
+  .project__list-title {
+    display: none;
+  }
+
+  .project__list-help {
+    text-align: center;
+  }
+
+  .project__list-help::after {
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    left: 144px;
+  }
+
+  .project__img-list {
+    margin: 0;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
 }
 
-.project__img:not(:first-child) {
-  margin-left: 39px;
+@media only screen and (max-width: 830px) {
+  .project {
+    padding-bottom: 20px;
+  }
+
+  .project__title {
+    font-size: 20px;
+    line-height: 18px;
+    margin-top: 40px;
+  }
+
+  .project__list {
+    margin-top: 20px;
+  }
+
+  .project__list-text{
+    font-size: 16px;
+  }
+
+  .project__list-help::after {
+    display: none;
+  }
 }
 
-.project__skanska {
-  margin-left: auto;
-  margin-right: auto;
+@media only screen and (max-width: 410px) {
+  .project__img-list {
+    justify-content: center;
+  }
 }

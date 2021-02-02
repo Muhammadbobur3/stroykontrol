@@ -7,15 +7,6 @@
   flex-direction: column;
 }
 
-.chaos__container::after {
-  content: "";
-  min-width: 1040px;
-  min-height: 304px;
-  background-image: url("../img/chaos-bg.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center bottom;
-}
 
 .chaos__title {
   margin: 0;
@@ -31,8 +22,10 @@
 
 .chaos__text {
   max-width: 1015px;
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "Inter";
   font-style: normal;
   font-weight: normal;
@@ -40,4 +33,19 @@
   line-height: 32px;
   text-align: center;
   color: #72787D;
+}
+
+@media only screen and (max-width: 830px) {
+  .chaos {
+    padding-bottom: 0;
+  }
+
+  .chaos__title {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .chaos__text {
+    font-size: 16px;
+  }
 }

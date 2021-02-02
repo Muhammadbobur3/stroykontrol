@@ -36,9 +36,9 @@
 .sitenav--open .sitenav__list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #2C6269;
-  max-width: 100%;
+  align-items: flex-start;
+  background-color: #279785;
+  min-width: 65%;
   height: 100vh;
   padding: 112px 0px 0 48px;
 }
@@ -54,10 +54,28 @@
   margin-right: 0;
 }
 
+.sitenav--open .nav-list__link {
+  color: #ffffff;
+}
+
 .sitenav--open .sitenav__btn {
+  margin-top: auto;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
+}
+
+.sitenav--open .sitenav__inner {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  background-color: rgba(246, 248, 249, 0.103);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
 }
 
 .sitenav__list {

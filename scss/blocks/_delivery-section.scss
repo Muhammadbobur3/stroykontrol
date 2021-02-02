@@ -37,7 +37,7 @@
   margin: 0;
   list-style-type: none;
   display: flex;
-  align-items: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 
@@ -133,7 +133,7 @@
   content: "";
   min-width: 48px;
   min-height: 48px;
-  background-image: url("../img/equips.png");
+  background-image: url("../img/equipment.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left top;
@@ -196,7 +196,104 @@
   background-color: #FFD042;
   width: 284px;
   height: 16px;
-  left: 170px;
+  left: 270px;
   top: 17px;
   z-index: -1;
+}
+
+@media only screen and (max-width: 830px) {
+  .delivery-section__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .delivery-item__title {
+    text-align: center;
+  }
+
+  .delivery-item__text {
+    text-align: center;
+  }
+
+  .intro-section__bottom-text::after {
+    display: none;
+  }
+
+  .delivery-section__item--lesa::before {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .delivery-section__item--beton::before {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .delivery-section__item--fasad::before{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .delivery-section__item--panel::before {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .delivery-section__item--waste::before {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .delivery-section__item--equips::before {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .delivery-section__item--otdelka::before {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .delivery-section__item--texnika::before {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .delivery-section__item--formwork::before {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 775px) {
+  .delivery-section {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  .delivery-section__title {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  .delivery-section__text {
+    font-size: 16px;
+  }
+
+  .delivery-section__list {
+    justify-content: center;
+  }
+
+  .delivery-section__item:nth-child(1n) {
+    margin-right: 0;
+  }
 }

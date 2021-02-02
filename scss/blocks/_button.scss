@@ -2,48 +2,14 @@
   text-decoration: none;
 }
 
-
-.intro-section__button {
-  font-family: Arial;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
-  color: #FFFFFF;
-  display: block;
-  padding: 13px 25px;
-  text-decoration: none;
-  border-radius: 3px;
-}
-
-.left-button {
+.intro-section__left-button {
   background-color: black;
   margin-right: 8px;
 }
 
-.right-button {
+.intro-section__right-button {
   background-color: transparent;
   border: 1px solid #cccccc;
-  color: #72787D;
+  color: #666869;
   margin-left: 8px;
-}
-
-.design-item__button {
-  text-decoration: none;
-  padding: 0;
-  margin-left: 22px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-  background-color: black;
-  padding: 9px 20px;
-  border-radius: 3px;
-  background-color: transparent;
-  border: 1px solid #cccccc;
-  color: #72787D;
-  margin-left: auto;
 }

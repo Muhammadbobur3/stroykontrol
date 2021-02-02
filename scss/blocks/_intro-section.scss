@@ -1,10 +1,14 @@
 .intro-section {
   padding-top: 74px;
-  padding-bottom: 142px;
-  background-image: url("../img/intr-section-bg.png");
-  background-repeat: no-repeat;
-  background-size: 1040px 422px;
-  background-position: center 400px;
+  padding-bottom: 100px;
+}
+
+.intro-section__bg {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 148px;
 }
 
 .intro-section__title {
@@ -27,10 +31,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 88px;
+}
+
+.intro-section__button {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  display: block;
+  padding: 13px 25px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.intro-section__left-button {
+  background-color: black;
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+.intro-section__right-button {
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  color: #666869;
+  margin-left: 8px;
 }
 
 .intro-section__list {
-  margin-top: 685px;
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -45,6 +75,7 @@
   max-width: 325px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 40px;
 }
 
 .intro-section__item--effekt::before {
@@ -78,4 +109,35 @@
   background-size: contain;
   background-position: top center;
   margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 830px) {
+  .intro-section__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .intro-section__list {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .intro-section {
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .intro-section__bg {
+    margin-bottom: 30px;
+  }
+
+  .intro-section__title {
+    font-size: 24px;
+  }
+
+  .intro-section__button {
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
